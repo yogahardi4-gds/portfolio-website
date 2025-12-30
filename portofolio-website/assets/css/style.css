@@ -1,0 +1,69 @@
+/* ================= HERO SECTION STYLE ================= */
+.hero {
+    background-color: #dc3545; /* Bootstrap red */
+    padding: 60px 20px;
+}
+
+/* Card image height control */
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+/* ================= PORTFOLIO CARD HOVER ================= */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= IMAGE ZOOM ON HOVER ================= */
+.card img {
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+/* ================= BADGE HOVER EFFECT ================= */
+.card .badge {
+    transition: all 0.3s ease;
+}
+
+.card:hover .badge {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card-title {
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-title {
+    color: #dc3545; 
+}
+
+/* ================= ACTIVE CARD STATE (VIA JS) ================= */
+.portfolio-item.active {
+    outline: 3px solid rgba(220, 53, 69, 0.6);
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* ================= BUTTON HOVER EFFECT ================= */
+.btn-danger {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-danger:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(220, 53, 69, 0.4);
+}
